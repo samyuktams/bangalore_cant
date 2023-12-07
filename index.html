@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clickable Image Demo with Hyperlink</title>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="basemap.png" alt="Football" class="clickable-image">
+    </div>
+    <div class="sample1">
+        <a href="#" onclick="showPop1()">
+            <img src="sample1.png" alt="" />
+        </a>
+    </div>
+    <div class="sample2">
+        <a href="#" onclick="showPop2()">
+            <img src="sample2.png" alt="" />
+        </a>
+    </div>
+
+    
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popup-content"></div>
+    </div>
+
+
+    <div class="hide" id="pop1">
+        <img src="pink_trumpet.gif" />
+    </div>
+
+
+    <div class="hide" id="pop2">
+        <img src="jacaranda.gif" />
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
